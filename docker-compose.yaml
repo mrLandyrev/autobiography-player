@@ -1,0 +1,10 @@
+services:
+  player:
+    build:
+      context: .
+    ports:
+    - 8077:8077
+    volumes:
+    - /home/mrlandyrev/mpd/socket:/app/mpd/socket
+    - ./cache:/source/cache
+    - ./tracks.db:/source/tracks.db

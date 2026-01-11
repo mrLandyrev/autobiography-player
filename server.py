@@ -193,7 +193,7 @@ class Player():
                     
 
      
-client = Client("insert your key here",
+client = Client("token",
                 report_unknown_fields=False).init()                   
 feed_manager = FeedManager()
 player = Player()

@@ -9,6 +9,7 @@ class ConnectionManager():
         self.connections.append(websocket)
 
     def disconnect(self, websocket: fastapi.WebSocket):
+        websocket.close()
         self.connections.remove(websocket)
 
     async def broadcast(self, message: str):
