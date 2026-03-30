@@ -3,7 +3,7 @@ from sqlalchemy import select, create_engine, Table, Column, String, ForeignKey,
 from sqlalchemy.orm import Session, DeclarativeBase, Mapped, mapped_column, relationship
 from typing import List
 
-engine = create_engine('sqlite:///tracks.db', echo=False)
+engine = create_engine('sqlite:///cache/tracks.db', echo=False)
 
 class Base(DeclarativeBase):
     pass
